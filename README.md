@@ -1,103 +1,143 @@
-# 📚 Bookstore API Automation Project
 
-This project automates the testing of a FastAPI-based Bookstore backend using **Java, RestAssured, Cucumber**, and **Extent Reports**.
+# Bookstore API Automation Project
 
-## 🚀 Tech Stack
+This repository contains an end-to-end API automation framework built for a FastAPI-based Bookstore application. The tests are written in Java using RestAssured and Cucumber, with reporting via Extent Reports. The project also includes automated server startup and supports CI/CD pipelines.
 
-| Layer             | Tech Used                  |
-|------------------|----------------------------|
-| Backend API      | FastAPI (Python)           |
-| API Testing      | Java + RestAssured         |
-| Test Framework   | Cucumber (BDD)             |
-| Reporting        | Extent Reports (HTML)      |
-| Build Tool       | Maven                      |
-| CI/CD            | GitHub Actions (Optional)  |
+## Tech Stack
 
-## 📁 Project Structure
+| Layer           | Technology        |
+|----------------|-------------------|
+| API Backend     | FastAPI (Python)  |
+| API Automation  | Java + RestAssured |
+| Test Framework  | Cucumber (BDD)    |
+| Reports         | Extent Reports    |
+| Build Tool      | Maven             |
+| CI/CD           | GitHub Actions    |
+
+## Project Structure
 
 ```
 bookstore-api-test/
 ├── bookstore-main/             # FastAPI backend
-│   ├── main.py                 # FastAPI app entry
+│   ├── main.py                 # FastAPI app entry point
 │   └── requirements.txt        # Python dependencies
 ├── src/
 │   └── main/java/com/bookStore
-│       ├── base/               # POJOs for request payloads
-│       ├── config/             # Constants and configs
-│       ├── service/            # API service layers
-│       ├── utils/              # Reporting & REST utilities
+│       ├── base/               # Request payload models
+│       ├── config/             # Configuration reader
+│       ├── service/            # API service classes
+│       ├── utils/              # Utilities (reporting, server, etc.)
 │   └── test/java/com/bookstore
-│       ├── stepdefs/           # Cucumber step definitions
-│       ├── hooks/              # Cucumber hooks (if any)
-├── features/
-│   └── BookManagement.feature  # API test scenarios
+│       ├── stepdefs/           # Step definitions
+│       ├── hooks/              # Hooks for setup/teardown
+├── features/                   # Cucumber feature files
+│   └── BookManagement.feature
 ├── pom.xml                     # Maven config
-└── README.md                   # You are here!
+└── README.md                   # Project documentation
 ```
 
-## ⚙️ Setup & Execution
+## Setup & Execution
 
-### 1. Start the FastAPI Backend
+### 1. Backend Server (Automated)
 
-```bash
-cd bookstore-main
-pip install -r requirements.txt
-uvicorn main:app --reload
+No need to start the FastAPI server manually. It's launched automatically before the tests begin using Java ProcessBuilder.
+
+Example code:
+```java
+ProcessBuilder pb = new ProcessBuilder("uvicorn", "main:app", "--reload");
+pb.directory(new File("bookstore-main"));
+pb.redirectErrorStream(true);
 ```
 
-📌 The server runs at `http://127.0.0.1:8000`.
-
-### 2. Run the API Tests
+### 2. Run Tests
 
 ```bash
 mvn clean verify
 ```
 
-🧪 This runs all scenarios from your Cucumber `.feature` files and generates Extent HTML reports.
+- Starts the FastAPI server
+- Executes all Cucumber test scenarios
+- Generates an HTML test report
 
-## ✅ Test Coverage
+## Test Scenarios Covered
 
-| Feature           | Method | Endpoint         | Status |
-|------------------|--------|------------------|--------|
-| User Signup       | POST   | /signup          | ✅     |
-| User Login        | POST   | /login           | ✅     |
-| Create Book       | POST   | /books/          | ✅     |
-| Fetch All Books   | GET    | /books/          | ✅     |
-| Fetch Book by ID  | GET    | /books/{id}      | ✅     |
-| Update Book       | PUT    | /books/{id}      | ✅     |
-| Delete Book       | DELETE | /books/{id}      | ✅     |
-| Validation Errors | ALL    | All Endpoints    | ✅     |
+### Authentication
 
-## 📊 Reporting
+| Scenario Description              | Endpoint  | Method |
+|----------------------------------|-----------|--------|
+| Signup with valid data           | /signup   | POST   |
+| Signup with existing email       | /signup   | POST   |
+| Signup with missing fields       | /signup   | POST   |
+| Login with valid credentials     | /login    | POST   |
+| Login before signup              | /login    | POST   |
+| Login with missing fields        | /login    | POST   |
 
-- After execution, view the report at:
-  ```
-  target/cucumber-reports/ExtentReport.html
-  ```
-- Report includes:
-  - Scenario-wise status
-  - Expected vs Actual response
-  - Response payloads
+### Book Management
 
-## 🔁 CI/CD (Optional)
+| Scenario Description              | Endpoint         | Method  |
+|----------------------------------|------------------|---------|
+| Create book with valid details   | /books/          | POST    |
+| Create book with missing name    | /books/          | POST    |
+| Fetch all books                  | /books/          | GET     |
+| Fetch book by valid ID           | /books/{id}      | GET     |
+| Fetch book by invalid ID         | /books/{id}      | GET     |
+| Update existing book             | /books/{id}      | PUT     |
+| Update non-existing book         | /books/{id}      | PUT     |
+| Delete book by ID                | /books/{id}      | DELETE  |
+| Delete non-existing book         | /books/{id}      | DELETE  |
 
-You can configure **GitHub Actions** or any CI tool to:
-- Install dependencies
-- Run tests
-- Publish reports
+## Reporting
 
-Example GitHub Actions steps:
-```yaml
-- name: Set up JDK 17
-  uses: actions/setup-java@v3
-  with:
-    java-version: '17'
+After test execution, view the detailed report:
 
-- name: Run Maven tests
-  run: mvn clean test
+```
+target/cucumber-reports/ExtentReport.html
 ```
 
-## 👨‍💻 Author
+Includes:
+- Scenario-wise results
+- Request and response logs
+- Assertions and validations
+
+## CI/CD Pipeline
+
+The project supports CI/CD integration using GitHub Actions.
+
+### Sample GitHub Actions Workflow
+
+```yaml
+name: CI Pipeline
+
+on: [push, pull_request]
+
+jobs:
+  test:
+    runs-on: windows-latest
+
+    steps:
+    - uses: actions/checkout@v3
+
+    - name: Set up Java
+      uses: actions/setup-java@v3
+      with:
+        java-version: '17'
+
+    - name: Install Python dependencies
+      run: |
+        cd bookstore-main
+        pip install -r requirements.txt
+
+    - name: Start FastAPI server
+      run: |
+        start uvicorn main:app --reload
+      working-directory: bookstore-main
+
+    - name: Run API Tests
+      run: mvn clean verify
+```
+
+## Author
 
 **Vignesh Arun Kumar**  
-Senior Test Engineer | API Automation | FastAPI | Java + Cucumber + RestAssured
+Senior Test Engineer  
+Expertise: Java, API Testing, FastAPI, RestAssured, Cucumber
