@@ -9,7 +9,8 @@ import io.cucumber.junit.CucumberOptions;
     features = "src/test/resources/features",
     glue = {"com.bookstore.stepdefs", "com.bookstore.hooks"},
     plugin = {"pretty", "html:target/cucumber-reports", "json:target/cucumber.json"},
-    monochrome = true
+    monochrome = true,
+    tags = "@regression"
 )
 public class TestRunner {
 }
