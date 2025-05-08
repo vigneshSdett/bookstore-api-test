@@ -11,37 +11,37 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-    - name: Checkout code
-      uses: actions/checkout@v3
+      - name: Checkout code
+        uses: actions/checkout@v3
 
-    - name: Set up Python 3.9
-      uses: actions/setup-python@v4
-      with:
-        python-version: '3.9'
+      - name: Set up Python 3.9
+        uses: actions/setup-python@v4
+        with:
+          python-version: '3.9'
 
-    - name: Install Python dependencies
-      run: |
-        cd bookstore-main
-        pip install -r requirements.txt
+      - name: Install Python dependencies
+        run: |
+          cd bookstore-main
+          pip install -r requirements.txt
 
-    - name: Start FastAPI server in background
-      run: |
-        cd bookstore-main
-        uvicorn main:app --host 127.0.0.1 --port 8000 --reload &
-        sleep 5
+      - name: Start FastAPI server in background
+        run: |
+          cd bookstore-main
+          uvicorn main:app --host 127.0.0.1 --port 8000 --reload &
+          sleep 5
 
-    - name: Set up JDK 17
-      uses: actions/setup-java@v3
-      with:
-        distribution: 'temurin'
-        java-version: '17'
+      - name: Set up JDK 17
+        uses: actions/setup-java@v3
+        with:
+          distribution: 'temurin'
+          java-version: '17'
 
-    - name: Build and run tests
-      run: mvn clean verify
+      - name: Build and run tests
+        run: mvn clean verify
 
-    - name: Archive Extent Report
-      if: always()
-      uses: actions/upload-artifact@v2
-      with:
-        name: ExtentReport
-        path: target/cucumber-reports/ExtentReport.html
+      - name: Archive Extent Report
+        if: always()
+        uses: actions/upload-artifact@v2
+        with:
+          name: ExtentReport
+          path: target/cucumber-reports/ExtentReport.html
