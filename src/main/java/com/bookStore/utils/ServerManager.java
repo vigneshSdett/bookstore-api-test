@@ -13,6 +13,12 @@ public class ServerManager {
     private static Process serverProcess;
 
     public static void startServer() {
+    	
+    	if (System.getenv("CI") != null) {
+    	    System.out.println("CI environment detected — skipping FastAPI server startup.");
+    	    ExtentReportUtil.step("INFO", "CI mode: FastAPI server is managed by GitHub Actions.");
+    	    return;
+    	}
         try {
         	
         	ExtentReportUtil.step("INFO", "----------Server startup---------");
