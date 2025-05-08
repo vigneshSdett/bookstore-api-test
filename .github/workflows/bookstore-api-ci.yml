@@ -11,7 +11,7 @@ jobs:
     runs-on: ubuntu-latest
 
     env:
-      CI: true  # Used in Java code to skip server startup
+      CI: true  # This will prevent Java server startup inside CI
 
     steps:
       - name: Checkout code
@@ -38,19 +38,12 @@ jobs:
           distribution: 'temurin'
           java-version: '11'
 
-      - name: Build and run tests (conditionally ignore failures)
-        run: |
-          if [ "$CI" = "true" ]; then
-            echo "📦 CI environment detected — ignoring test failures."
-            mvn -B clean verify || true
-          else
-            echo "💻 Local environment — failing on test errors."
-            mvn clean verify
-          fi
+      - name: Build and run tests
+        run: mvn clean verify
 
       - name: Archive Extent Report
         if: always()
         uses: actions/upload-artifact@v4
         with:
           name: ExtentReport
-          path: target/extent-report.html  # Make sure this matches your real report path
+          path: target/extent-report.html
