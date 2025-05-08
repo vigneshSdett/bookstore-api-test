@@ -5,14 +5,14 @@ This repository contains an end-to-end API automation framework built for a Fast
 
 ## Tech Stack
 
-| Layer           | Technology        |
-|----------------|-------------------|
-| API Backend     | FastAPI (Python)  |
+| Layer           | Technology         |
+|----------------|---------------------|
+| API Backend     | FastAPI            |
 | API Automation  | Java + RestAssured |
-| Test Framework  | Cucumber (BDD)    |
-| Reports         | Extent Reports    |
-| Build Tool      | Maven             |
-| CI/CD           | GitHub Actions    |
+| Test Framework  | Cucumber (BDD)     |
+| Reports         | Extent Reports     |
+| Build Tool      | Maven              |
+| CI/CD           | GitHub Actions     |
 
 ## Project Structure
 
@@ -140,4 +140,4 @@ jobs:
 
 **Vignesh Arun Kumar**  
 Senior Test Engineer  
-Expertise: Java, API Testing, FastAPI, RestAssured, Cucumber
+Expertise: Java, API Testing, RestAssured, Cucumber, Selenium
