@@ -10,6 +10,9 @@ jobs:
   build-and-test:
     runs-on: ubuntu-latest
 
+    env:
+      CI: true  # This is used in ServerManager.java to skip server startup
+
     steps:
       - name: Checkout code
         uses: actions/checkout@v3
@@ -25,7 +28,7 @@ jobs:
 
       - name: Start FastAPI server in background
         run: |
-          cd bookstore-main
+          cd bookstore-main/bookstore
           uvicorn main:app --host 127.0.0.1 --port 8000 --reload &
           sleep 5
 
@@ -43,4 +46,4 @@ jobs:
         uses: actions/upload-artifact@v4
         with:
           name: ExtentReport
-          path: target/cucumber-reports/ExtentReport.html
+          path: target/extent-report.html  # Update this if your report path is different
