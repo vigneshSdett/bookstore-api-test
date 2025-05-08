@@ -7,9 +7,14 @@ import io.cucumber.junit.CucumberOptions;
 @RunWith(Cucumber.class)
 @CucumberOptions(
     features = "src/test/resources/features",
-    glue = {"com.bookstore.stepdefs", "com.bookstore.hooks"},
-    plugin = {"pretty", "html:target/cucumber-reports", "json:target/cucumber.json"},
+    glue = "com.bookstore.stepdefs",
+    plugin = {
+        "pretty",
+        "html:target/extent-report.html",
+        "json:target/cucumber.json"
+    },
+    tags = "@regression",
     monochrome = true
 )
-public class TestRunner {
+public class RegressionTestRunner {
 }
