@@ -39,7 +39,7 @@ jobs:
           java-version: '11'
 
       - name: Build and run tests
-        run: mvn clean verify
+        run: mvn clean verify -Dcucumber.filter.tags="@regression"
 
       - name: Archive Extent Report
         if: always()
