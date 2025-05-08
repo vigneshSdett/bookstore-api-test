@@ -1,0 +1,1521 @@
+
+
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<title></title>
+<link rel="apple-touch-icon" href="https://cdn.jsdelivr.net/gh/extent-framework/extent-github-cdn@b00a2d0486596e73dd7326beacf352c639623a0e/commons/img/logo.png">
+<link rel="shortcut icon" href="https://cdn.jsdelivr.net/gh/extent-framework/extent-github-cdn@b00a2d0486596e73dd7326beacf352c639623a0e/commons/img/logo.png">
+<link href="https://cdn.jsdelivr.net/gh/extent-framework/extent-github-cdn@d6562a79075e061305ccfdb82f01e5e195e2d307/spark/css/spark-style.css" rel="stylesheet" />
+<link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+<script src="https://cdn.jsdelivr.net/gh/extent-framework/extent-github-cdn@7cc78ce/spark/js/jsontree.js"></script>
+<style type="text/css"></style></head><body class="spa -report standard">
+  <div class="app">
+    <div class="layout">
+<div class="header navbar">
+<div class="vheader">
+<div class="nav-logo">
+<a href="#">
+<div class="logo" style="background-image: url('https://cdn.jsdelivr.net/gh/extent-framework/extent-github-cdn@b00a2d0486596e73dd7326beacf352c639623a0e/commons/img/logo.png')"></div>
+</a>
+</div>
+<ul class="nav-left">
+<li class="search-box">
+<a class="search-toggle" href="#">
+<i class="search-icon fa fa-search"></i>
+<i class="search-icon-close fa fa-close"></i>
+</a>
+</li>
+<li class="search-input"><input id="search-tests" class="form-control" type="text" placeholder="Search..."></li>
+</ul>
+<ul class="nav-right">
+<li class="m-r-10">
+<a href="#"><span class="badge badge-primary"></span></a>
+</li>
+<li class="m-r-10">
+<a href="#"><span class="badge badge-primary">May 8, 2025 07:40:22 am</span></a>
+</li>
+</ul>
+</div>
+</div><div class="side-nav">
+<div class="side-nav-inner">
+<ul class="side-nav-menu">
+<li class="nav-item dropdown" onclick="toggleView('test-view')">
+<a id="nav-test" class="dropdown-toggle" href="#">
+<span class="ico"><i class="fa fa-list"></i></span>
+</a>
+</li>
+<li class="nav-item dropdown" onclick="toggleView('dashboard-view')">
+<a id="nav-dashboard" class="dropdown-toggle" href="#">
+<span class="ico"><i class="fa fa-bar-chart"></i></span>
+</a>
+</li>
+</ul>
+</div>
+</div>      <div class="vcontainer">
+        <div class="main-content">
+<div class="test-wrapper row view test-view">
+  <div class="test-list">
+    <div class="test-list-tools">
+<ul class="tools pull-left">
+<li><a href="#"><span class="font-size-14">Tests</span></a></li>
+</ul>
+<ul class="tools text-right">
+<li class="dropdown">
+<a href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="fa fa-exclamation-circle"></i></a>
+<ul id="status-toggle" class="dropdown-menu dropdown-md p-v-0">
+<a class="dropdown-item" status="pass" href="#"><span>Pass</span><span class="status success"></span></a>
+<div class="dropdown-divider"></div>
+<a status="clear" class="dropdown-item" href="#"><span>Clear</span><span class="pull-right"><i class="fa fa-close"></i></span></a>
+</ul>
+</li>
+</ul>
+</div>    <div class="test-list-wrapper scrollable">
+      <ul class="test-list-item">
+        <li class="test-item"  status="pass" test-id="1"
+          author=""
+          tag=""
+          device="">
+          <div class="test-detail">
+            <p class="name">FastAPI Server Setup</p>
+            <p class="text-sm">
+              <span>7:40:23 am</span> / <span>00:00:14:755</span>
+              <span class="badge pass-bg log float-right">Pass</span>
+            </p>
+          </div>
+          <div class="test-contents d-none">
+<div class="detail-head">
+<div class="p-v-10">
+<div class="info">
+<h5 class="test-status text-pass">FastAPI Server Setup</h5>
+<span class='badge badge-success'>05.08.2025 7:40:23 am</span>
+<span class='badge badge-danger'>05.08.2025 7:40:38 am</span>
+<span class='badge badge-default'>00:00:14:755</span>
+&middot; <span class='uri-anchor badge badge-default'>#test-id=1</span>
+<span class='badge badge-default pointer float-right ml-1 et'><i class="fa fa-chevron-down"></i></span>
+<span class='badge badge-default pointer float-right ct'><i class="fa fa-chevron-up"></i></span>
+</div>
+</div>
+</div><div class="detail-body mt-4">
+<table class="table table-sm">
+  <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
+  <tbody>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>7:40:23 am</td>
+        <td>
+          ----------Server startup---------
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>7:40:38 am</td>
+        <td>
+          FastAPI Server is up and ready!
+        </td>
+      </tr>
+  </tbody>
+</table>
+</div>
+          </div>
+        </li>
+        <li class="test-item"  status="pass" test-id="2"
+          author=""
+          tag=""
+          device="">
+          <div class="test-detail">
+            <p class="name">Create a book with valid details</p>
+            <p class="text-sm">
+              <span>7:40:40 am</span> / <span>00:00:14:717</span>
+              <span class="badge pass-bg log float-right">Pass</span>
+            </p>
+          </div>
+          <div class="test-contents d-none">
+<div class="detail-head">
+<div class="p-v-10">
+<div class="info">
+<h5 class="test-status text-pass">Create a book with valid details</h5>
+<span class='badge badge-success'>05.08.2025 7:40:40 am</span>
+<span class='badge badge-danger'>05.08.2025 7:40:55 am</span>
+<span class='badge badge-default'>00:00:14:717</span>
+&middot; <span class='uri-anchor badge badge-default'>#test-id=2</span>
+<span class='badge badge-default pointer float-right ml-1 et'><i class="fa fa-chevron-down"></i></span>
+<span class='badge badge-default pointer float-right ct'><i class="fa fa-chevron-up"></i></span>
+</div>
+</div>
+</div><div class="detail-body mt-4">
+<table class="table table-sm">
+  <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
+  <tbody>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>7:40:40 am</td>
+        <td>
+          Starting Scenario: Create a book with valid details
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>7:40:45 am</td>
+        <td>
+          ✅ User Signup
+Expected: 200 - User created successfully
+Actual: 200 - {"message":"User created successfully"}
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>7:40:54 am</td>
+        <td>
+          ✅ User Login
+Expected: 200 - Login successful
+Actual: 200 - {"access_token":"eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJib29rZmxvd191c2VyXzE3NDY2NzAyNDA2ODhAbWFpbC5jb20iLCJleHAiOjE3NDY2NzIwNDd9.ASiHcJkKFyenDdaENQhaQ5_kRnLy3JCscZNiC4uG_4c","token_type":"bearer"}
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>7:40:54 am</td>
+        <td>
+          Prepared book payload: Book{id=54156, name='MyBook1', author='Alice', published_year=2024, book_summary='A story begins'}
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>7:40:54 am</td>
+        <td>
+          Book creation request response:
+Status: 200
+Body: {"id":54156,"author":"Alice","book_summary":"A story begins","published_year":2024,"name":"MyBook1"}
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>7:40:55 am</td>
+        <td>
+          ✅ Book Creation
+Expected: 200 - MyBook1
+Actual: 200 - MyBook1
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>7:40:55 am</td>
+        <td>
+          Scenario passed: Create a book with valid details
+        </td>
+      </tr>
+  </tbody>
+</table>
+</div>
+          </div>
+        </li>
+        <li class="test-item"  status="pass" test-id="3"
+          author=""
+          tag=""
+          device="">
+          <div class="test-detail">
+            <p class="name">Create a book with valid details</p>
+            <p class="text-sm">
+              <span>7:40:59 am</span> / <span>00:00:06:287</span>
+              <span class="badge pass-bg log float-right">Pass</span>
+            </p>
+          </div>
+          <div class="test-contents d-none">
+<div class="detail-head">
+<div class="p-v-10">
+<div class="info">
+<h5 class="test-status text-pass">Create a book with valid details</h5>
+<span class='badge badge-success'>05.08.2025 7:40:59 am</span>
+<span class='badge badge-danger'>05.08.2025 7:41:05 am</span>
+<span class='badge badge-default'>00:00:06:287</span>
+&middot; <span class='uri-anchor badge badge-default'>#test-id=3</span>
+<span class='badge badge-default pointer float-right ml-1 et'><i class="fa fa-chevron-down"></i></span>
+<span class='badge badge-default pointer float-right ct'><i class="fa fa-chevron-up"></i></span>
+</div>
+</div>
+</div><div class="detail-body mt-4">
+<table class="table table-sm">
+  <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
+  <tbody>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>7:40:59 am</td>
+        <td>
+          Starting Scenario: Create a book with valid details
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>7:41:02 am</td>
+        <td>
+          ✅ User Signup
+Expected: 200 - User created successfully
+Actual: 200 - {"message":"User created successfully"}
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>7:41:04 am</td>
+        <td>
+          ✅ User Login
+Expected: 200 - Login successful
+Actual: 200 - {"access_token":"eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJib29rZmxvd191c2VyXzE3NDY2NzAyNTkwNTVAbWFpbC5jb20iLCJleHAiOjE3NDY2NzIwNjR9.tuABeUfVYg29f_w9a8MKM0E3ejw9VMgjMJ2IvJkJypQ","token_type":"bearer"}
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>7:41:04 am</td>
+        <td>
+          Prepared book payload: Book{id=64979, name='AutomationQA', author='Bob', published_year=2025, book_summary='Test coverage'}
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>7:41:05 am</td>
+        <td>
+          Book creation request response:
+Status: 200
+Body: {"id":64979,"author":"Bob","book_summary":"Test coverage","published_year":2025,"name":"AutomationQA"}
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>7:41:05 am</td>
+        <td>
+          ✅ Book Creation
+Expected: 200 - AutomationQA
+Actual: 200 - AutomationQA
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>7:41:05 am</td>
+        <td>
+          Scenario passed: Create a book with valid details
+        </td>
+      </tr>
+  </tbody>
+</table>
+</div>
+          </div>
+        </li>
+        <li class="test-item"  status="pass" test-id="4"
+          author=""
+          tag=""
+          device="">
+          <div class="test-detail">
+            <p class="name">Attempt to create a book with missing name</p>
+            <p class="text-sm">
+              <span>7:41:05 am</span> / <span>00:00:05:262</span>
+              <span class="badge pass-bg log float-right">Pass</span>
+            </p>
+          </div>
+          <div class="test-contents d-none">
+<div class="detail-head">
+<div class="p-v-10">
+<div class="info">
+<h5 class="test-status text-pass">Attempt to create a book with missing name</h5>
+<span class='badge badge-success'>05.08.2025 7:41:05 am</span>
+<span class='badge badge-danger'>05.08.2025 7:41:11 am</span>
+<span class='badge badge-default'>00:00:05:262</span>
+&middot; <span class='uri-anchor badge badge-default'>#test-id=4</span>
+<span class='badge badge-default pointer float-right ml-1 et'><i class="fa fa-chevron-down"></i></span>
+<span class='badge badge-default pointer float-right ct'><i class="fa fa-chevron-up"></i></span>
+</div>
+</div>
+</div><div class="detail-body mt-4">
+<table class="table table-sm">
+  <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
+  <tbody>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>7:41:05 am</td>
+        <td>
+          Starting Scenario: Attempt to create a book with missing name
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>7:41:08 am</td>
+        <td>
+          ✅ User Signup
+Expected: 200 - User created successfully
+Actual: 200 - {"message":"User created successfully"}
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>7:41:11 am</td>
+        <td>
+          ✅ User Login
+Expected: 200 - Login successful
+Actual: 200 - {"access_token":"eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJib29rZmxvd191c2VyXzE3NDY2NzAyNjU5MjZAbWFpbC5jb20iLCJleHAiOjE3NDY2NzIwNzB9.02_hP1IqiPmZZmYfM8GmN7HppwYXXVKwGu6zlHDpZsI","token_type":"bearer"}
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>7:41:11 am</td>
+        <td>
+          Scenario passed: Attempt to create a book with missing name
+        </td>
+      </tr>
+  </tbody>
+</table>
+</div>
+          </div>
+        </li>
+        <li class="test-item"  status="pass" test-id="5"
+          author=""
+          tag=""
+          device="">
+          <div class="test-detail">
+            <p class="name">Fetch all books and validate list</p>
+            <p class="text-sm">
+              <span>7:41:11 am</span> / <span>00:00:05:159</span>
+              <span class="badge pass-bg log float-right">Pass</span>
+            </p>
+          </div>
+          <div class="test-contents d-none">
+<div class="detail-head">
+<div class="p-v-10">
+<div class="info">
+<h5 class="test-status text-pass">Fetch all books and validate list</h5>
+<span class='badge badge-success'>05.08.2025 7:41:11 am</span>
+<span class='badge badge-danger'>05.08.2025 7:41:16 am</span>
+<span class='badge badge-default'>00:00:05:159</span>
+&middot; <span class='uri-anchor badge badge-default'>#test-id=5</span>
+<span class='badge badge-default pointer float-right ml-1 et'><i class="fa fa-chevron-down"></i></span>
+<span class='badge badge-default pointer float-right ct'><i class="fa fa-chevron-up"></i></span>
+</div>
+</div>
+</div><div class="detail-body mt-4">
+<table class="table table-sm">
+  <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
+  <tbody>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>7:41:11 am</td>
+        <td>
+          Starting Scenario: Fetch all books and validate list
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>7:41:14 am</td>
+        <td>
+          ✅ User Signup
+Expected: 200 - User created successfully
+Actual: 200 - {"message":"User created successfully"}
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>7:41:16 am</td>
+        <td>
+          ✅ User Login
+Expected: 200 - Login successful
+Actual: 200 - {"access_token":"eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJib29rZmxvd191c2VyXzE3NDY2NzAyNzE1NDVAbWFpbC5jb20iLCJleHAiOjE3NDY2NzIwNzZ9.y0PHMkkVkiNxrchAOY_adVudV8zKcbXohviV0WVABl0","token_type":"bearer"}
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>7:41:16 am</td>
+        <td>
+          Scenario passed: Fetch all books and validate list
+        </td>
+      </tr>
+  </tbody>
+</table>
+</div>
+          </div>
+        </li>
+        <li class="test-item"  status="pass" test-id="6"
+          author=""
+          tag=""
+          device="">
+          <div class="test-detail">
+            <p class="name">Fetch book by valid ID</p>
+            <p class="text-sm">
+              <span>7:41:17 am</span> / <span>00:00:06:121</span>
+              <span class="badge pass-bg log float-right">Pass</span>
+            </p>
+          </div>
+          <div class="test-contents d-none">
+<div class="detail-head">
+<div class="p-v-10">
+<div class="info">
+<h5 class="test-status text-pass">Fetch book by valid ID</h5>
+<span class='badge badge-success'>05.08.2025 7:41:17 am</span>
+<span class='badge badge-danger'>05.08.2025 7:41:23 am</span>
+<span class='badge badge-default'>00:00:06:121</span>
+&middot; <span class='uri-anchor badge badge-default'>#test-id=6</span>
+<span class='badge badge-default pointer float-right ml-1 et'><i class="fa fa-chevron-down"></i></span>
+<span class='badge badge-default pointer float-right ct'><i class="fa fa-chevron-up"></i></span>
+</div>
+</div>
+</div><div class="detail-body mt-4">
+<table class="table table-sm">
+  <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
+  <tbody>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>7:41:17 am</td>
+        <td>
+          Starting Scenario: Fetch book by valid ID
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>7:41:19 am</td>
+        <td>
+          ✅ User Signup
+Expected: 200 - User created successfully
+Actual: 200 - {"message":"User created successfully"}
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>7:41:22 am</td>
+        <td>
+          ✅ User Login
+Expected: 200 - Login successful
+Actual: 200 - {"access_token":"eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJib29rZmxvd191c2VyXzE3NDY2NzAyNzcxMThAbWFpbC5jb20iLCJleHAiOjE3NDY2NzIwODJ9.sJxlkgds0YYWKip_wzovYbeJdeiIdcRXSyQmU6vhSuY","token_type":"bearer"}
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>7:41:22 am</td>
+        <td>
+          Prepared book payload: Book{id=82681, name='FetchTestBook', author='QA', published_year=2023, book_summary='To be fetched'}
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>7:41:22 am</td>
+        <td>
+          Book creation request response:
+Status: 200
+Body: {"id":82681,"author":"QA","book_summary":"To be fetched","published_year":2023,"name":"FetchTestBook"}
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>7:41:23 am</td>
+        <td>
+          Fetching book by valid ID: 82681 Response Body: {"id":82681,"author":"QA","book_summary":"To be fetched","published_year":2023,"name":"FetchTestBook"}
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>7:41:23 am</td>
+        <td>
+          ✅ Fetch Book by ID
+Expected: 200 - FetchTestBook
+Actual: 200 - FetchTestBook
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>7:41:23 am</td>
+        <td>
+          Scenario passed: Fetch book by valid ID
+        </td>
+      </tr>
+  </tbody>
+</table>
+</div>
+          </div>
+        </li>
+        <li class="test-item"  status="pass" test-id="7"
+          author=""
+          tag=""
+          device="">
+          <div class="test-detail">
+            <p class="name">Fetch book using invalid ID</p>
+            <p class="text-sm">
+              <span>7:41:23 am</span> / <span>00:00:05:570</span>
+              <span class="badge pass-bg log float-right">Pass</span>
+            </p>
+          </div>
+          <div class="test-contents d-none">
+<div class="detail-head">
+<div class="p-v-10">
+<div class="info">
+<h5 class="test-status text-pass">Fetch book using invalid ID</h5>
+<span class='badge badge-success'>05.08.2025 7:41:23 am</span>
+<span class='badge badge-danger'>05.08.2025 7:41:29 am</span>
+<span class='badge badge-default'>00:00:05:570</span>
+&middot; <span class='uri-anchor badge badge-default'>#test-id=7</span>
+<span class='badge badge-default pointer float-right ml-1 et'><i class="fa fa-chevron-down"></i></span>
+<span class='badge badge-default pointer float-right ct'><i class="fa fa-chevron-up"></i></span>
+</div>
+</div>
+</div><div class="detail-body mt-4">
+<table class="table table-sm">
+  <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
+  <tbody>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>7:41:23 am</td>
+        <td>
+          Starting Scenario: Fetch book using invalid ID
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>7:41:26 am</td>
+        <td>
+          ✅ User Signup
+Expected: 200 - User created successfully
+Actual: 200 - {"message":"User created successfully"}
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>7:41:29 am</td>
+        <td>
+          ✅ User Login
+Expected: 200 - Login successful
+Actual: 200 - {"access_token":"eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJib29rZmxvd191c2VyXzE3NDY2NzAyODM1OTVAbWFpbC5jb20iLCJleHAiOjE3NDY2NzIwODl9.pB5f2Kq36FujW6Prs9FstukAku5DC3O5D60UmpjhVRY","token_type":"bearer"}
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>7:41:29 am</td>
+        <td>
+          Scenario passed: Fetch book using invalid ID
+        </td>
+      </tr>
+  </tbody>
+</table>
+</div>
+          </div>
+        </li>
+        <li class="test-item"  status="pass" test-id="8"
+          author=""
+          tag=""
+          device="">
+          <div class="test-detail">
+            <p class="name">Login attempt before signup should return error</p>
+            <p class="text-sm">
+              <span>7:41:29 am</span> / <span>00:00:00:363</span>
+              <span class="badge pass-bg log float-right">Pass</span>
+            </p>
+          </div>
+          <div class="test-contents d-none">
+<div class="detail-head">
+<div class="p-v-10">
+<div class="info">
+<h5 class="test-status text-pass">Login attempt before signup should return error</h5>
+<span class='badge badge-success'>05.08.2025 7:41:29 am</span>
+<span class='badge badge-danger'>05.08.2025 7:41:30 am</span>
+<span class='badge badge-default'>00:00:00:363</span>
+&middot; <span class='uri-anchor badge badge-default'>#test-id=8</span>
+<span class='badge badge-default pointer float-right ml-1 et'><i class="fa fa-chevron-down"></i></span>
+<span class='badge badge-default pointer float-right ct'><i class="fa fa-chevron-up"></i></span>
+</div>
+</div>
+</div><div class="detail-body mt-4">
+<table class="table table-sm">
+  <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
+  <tbody>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>7:41:29 am</td>
+        <td>
+          Starting Scenario: Login attempt before signup should return error
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>7:41:29 am</td>
+        <td>
+          Login attempt with non-existent user
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>7:41:30 am</td>
+        <td>
+          [PASS] Error message matched: Incorrect email or password
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>7:41:30 am</td>
+        <td>
+          Scenario passed: Login attempt before signup should return error
+        </td>
+      </tr>
+  </tbody>
+</table>
+</div>
+          </div>
+        </li>
+        <li class="test-item"  status="pass" test-id="9"
+          author=""
+          tag=""
+          device="">
+          <div class="test-detail">
+            <p class="name">Login attempt with missing parameters should return error</p>
+            <p class="text-sm">
+              <span>7:41:30 am</span> / <span>00:00:02:842</span>
+              <span class="badge pass-bg log float-right">Pass</span>
+            </p>
+          </div>
+          <div class="test-contents d-none">
+<div class="detail-head">
+<div class="p-v-10">
+<div class="info">
+<h5 class="test-status text-pass">Login attempt with missing parameters should return error</h5>
+<span class='badge badge-success'>05.08.2025 7:41:30 am</span>
+<span class='badge badge-danger'>05.08.2025 7:41:33 am</span>
+<span class='badge badge-default'>00:00:02:842</span>
+&middot; <span class='uri-anchor badge badge-default'>#test-id=9</span>
+<span class='badge badge-default pointer float-right ml-1 et'><i class="fa fa-chevron-down"></i></span>
+<span class='badge badge-default pointer float-right ct'><i class="fa fa-chevron-up"></i></span>
+</div>
+</div>
+</div><div class="detail-body mt-4">
+<table class="table table-sm">
+  <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
+  <tbody>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>7:41:30 am</td>
+        <td>
+          Starting Scenario: Login attempt with missing parameters should return error
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>7:41:33 am</td>
+        <td>
+          Login with missing email parameter
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>7:41:33 am</td>
+        <td>
+          [PASS] Error message matched: Incorrect email or password
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>7:41:33 am</td>
+        <td>
+          Scenario passed: Login attempt with missing parameters should return error
+        </td>
+      </tr>
+  </tbody>
+</table>
+</div>
+          </div>
+        </li>
+        <li class="test-item"  status="pass" test-id="10"
+          author=""
+          tag=""
+          device="">
+          <div class="test-detail">
+            <p class="name">Sign up as a new user and login with the same credentials</p>
+            <p class="text-sm">
+              <span>7:41:33 am</span> / <span>00:00:05:966</span>
+              <span class="badge pass-bg log float-right">Pass</span>
+            </p>
+          </div>
+          <div class="test-contents d-none">
+<div class="detail-head">
+<div class="p-v-10">
+<div class="info">
+<h5 class="test-status text-pass">Sign up as a new user and login with the same credentials</h5>
+<span class='badge badge-success'>05.08.2025 7:41:33 am</span>
+<span class='badge badge-danger'>05.08.2025 7:41:39 am</span>
+<span class='badge badge-default'>00:00:05:966</span>
+&middot; <span class='uri-anchor badge badge-default'>#test-id=10</span>
+<span class='badge badge-default pointer float-right ml-1 et'><i class="fa fa-chevron-down"></i></span>
+<span class='badge badge-default pointer float-right ct'><i class="fa fa-chevron-up"></i></span>
+</div>
+</div>
+</div><div class="detail-body mt-4">
+<table class="table table-sm">
+  <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
+  <tbody>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>7:41:33 am</td>
+        <td>
+          Starting Scenario: Sign up as a new user and login with the same credentials
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>7:41:33 am</td>
+        <td>
+          Signup user prepared: user_9683f62e
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>7:41:36 am</td>
+        <td>
+          Executed signup API for user: user_9683f62e
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>7:41:36 am</td>
+        <td>
+          Signup succeeded. Message: User created successfully
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>7:41:39 am</td>
+        <td>
+          Login using valid credentials
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>7:41:39 am</td>
+        <td>
+          [PASS] Token found in response: eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1c2VyXzk2ODNmNjJlIiwiZXhwIjoxNzQ2NjcyMDk5fQ.qYqOr1iVaayTQw91MT-UVKv94bB767tHPm8awe2q3tE
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>7:41:39 am</td>
+        <td>
+          Scenario passed: Sign up as a new user and login with the same credentials
+        </td>
+      </tr>
+  </tbody>
+</table>
+</div>
+          </div>
+        </li>
+        <li class="test-item"  status="pass" test-id="11"
+          author=""
+          tag=""
+          device="">
+          <div class="test-detail">
+            <p class="name">Signup and Login with multiple dynamic users</p>
+            <p class="text-sm">
+              <span>7:41:39 am</span> / <span>00:00:05:602</span>
+              <span class="badge pass-bg log float-right">Pass</span>
+            </p>
+          </div>
+          <div class="test-contents d-none">
+<div class="detail-head">
+<div class="p-v-10">
+<div class="info">
+<h5 class="test-status text-pass">Signup and Login with multiple dynamic users</h5>
+<span class='badge badge-success'>05.08.2025 7:41:39 am</span>
+<span class='badge badge-danger'>05.08.2025 7:41:45 am</span>
+<span class='badge badge-default'>00:00:05:602</span>
+&middot; <span class='uri-anchor badge badge-default'>#test-id=11</span>
+<span class='badge badge-default pointer float-right ml-1 et'><i class="fa fa-chevron-down"></i></span>
+<span class='badge badge-default pointer float-right ct'><i class="fa fa-chevron-up"></i></span>
+</div>
+</div>
+</div><div class="detail-body mt-4">
+<table class="table table-sm">
+  <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
+  <tbody>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>7:41:39 am</td>
+        <td>
+          Starting Scenario: Signup and Login with multiple dynamic users
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>7:41:42 am</td>
+        <td>
+          Signup done for user: vakq1_user_076c85ef
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>7:41:42 am</td>
+        <td>
+          Signup succeeded. Message: User created successfully
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>7:41:45 am</td>
+        <td>
+          Login for user: vakq1_user_076c85ef
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>7:41:45 am</td>
+        <td>
+          [PASS] Token found in response: eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ2YWtxMV91c2VyXzA3NmM4NWVmIiwiZXhwIjoxNzQ2NjcyMTA1fQ.FTBax04GCxgzcjkz3DWydiL7DR_D0d0U_yP_Nnnt-xU
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>7:41:45 am</td>
+        <td>
+          Scenario passed: Signup and Login with multiple dynamic users
+        </td>
+      </tr>
+  </tbody>
+</table>
+</div>
+          </div>
+        </li>
+        <li class="test-item"  status="pass" test-id="12"
+          author=""
+          tag=""
+          device="">
+          <div class="test-detail">
+            <p class="name">Signup and Login with multiple dynamic users</p>
+            <p class="text-sm">
+              <span>7:41:45 am</span> / <span>00:00:05:414</span>
+              <span class="badge pass-bg log float-right">Pass</span>
+            </p>
+          </div>
+          <div class="test-contents d-none">
+<div class="detail-head">
+<div class="p-v-10">
+<div class="info">
+<h5 class="test-status text-pass">Signup and Login with multiple dynamic users</h5>
+<span class='badge badge-success'>05.08.2025 7:41:45 am</span>
+<span class='badge badge-danger'>05.08.2025 7:41:51 am</span>
+<span class='badge badge-default'>00:00:05:414</span>
+&middot; <span class='uri-anchor badge badge-default'>#test-id=12</span>
+<span class='badge badge-default pointer float-right ml-1 et'><i class="fa fa-chevron-down"></i></span>
+<span class='badge badge-default pointer float-right ct'><i class="fa fa-chevron-up"></i></span>
+</div>
+</div>
+</div><div class="detail-body mt-4">
+<table class="table table-sm">
+  <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
+  <tbody>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>7:41:45 am</td>
+        <td>
+          Starting Scenario: Signup and Login with multiple dynamic users
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>7:41:48 am</td>
+        <td>
+          Signup done for user: userapi_user_c9910fa7
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>7:41:48 am</td>
+        <td>
+          Signup succeeded. Message: User created successfully
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>7:41:50 am</td>
+        <td>
+          Login for user: userapi_user_c9910fa7
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>7:41:51 am</td>
+        <td>
+          [PASS] Token found in response: eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1c2VyYXBpX3VzZXJfYzk5MTBmYTciLCJleHAiOjE3NDY2NzIxMTB9.qazrJsCXMPkki0UOhc4afpHvFJEBdKR5RGHsDrPJO_w
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>7:41:51 am</td>
+        <td>
+          Scenario passed: Signup and Login with multiple dynamic users
+        </td>
+      </tr>
+  </tbody>
+</table>
+</div>
+          </div>
+        </li>
+        <li class="test-item"  status="pass" test-id="13"
+          author=""
+          tag=""
+          device="">
+          <div class="test-detail">
+            <p class="name">Signup and Login with multiple dynamic users</p>
+            <p class="text-sm">
+              <span>7:41:51 am</span> / <span>00:00:05:461</span>
+              <span class="badge pass-bg log float-right">Pass</span>
+            </p>
+          </div>
+          <div class="test-contents d-none">
+<div class="detail-head">
+<div class="p-v-10">
+<div class="info">
+<h5 class="test-status text-pass">Signup and Login with multiple dynamic users</h5>
+<span class='badge badge-success'>05.08.2025 7:41:51 am</span>
+<span class='badge badge-danger'>05.08.2025 7:41:56 am</span>
+<span class='badge badge-default'>00:00:05:461</span>
+&middot; <span class='uri-anchor badge badge-default'>#test-id=13</span>
+<span class='badge badge-default pointer float-right ml-1 et'><i class="fa fa-chevron-down"></i></span>
+<span class='badge badge-default pointer float-right ct'><i class="fa fa-chevron-up"></i></span>
+</div>
+</div>
+</div><div class="detail-body mt-4">
+<table class="table table-sm">
+  <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
+  <tbody>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>7:41:51 am</td>
+        <td>
+          Starting Scenario: Signup and Login with multiple dynamic users
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>7:41:54 am</td>
+        <td>
+          Signup done for user: qaauto_user_45b4986e
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>7:41:54 am</td>
+        <td>
+          Signup succeeded. Message: User created successfully
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>7:41:56 am</td>
+        <td>
+          Login for user: qaauto_user_45b4986e
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>7:41:56 am</td>
+        <td>
+          [PASS] Token found in response: eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJxYWF1dG9fdXNlcl80NWI0OTg2ZSIsImV4cCI6MTc0NjY3MjExNn0.BxHfVTOpkwcc47lbCFBVA6Y49_hmSDcbLEdsblLCBF0
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>7:41:56 am</td>
+        <td>
+          Scenario passed: Signup and Login with multiple dynamic users
+        </td>
+      </tr>
+  </tbody>
+</table>
+</div>
+          </div>
+        </li>
+        <li class="test-item"  status="pass" test-id="14"
+          author=""
+          tag=""
+          device="">
+          <div class="test-detail">
+            <p class="name">Signup with new email id and verify the success and error response</p>
+            <p class="text-sm">
+              <span>7:41:57 am</span> / <span>00:00:02:976</span>
+              <span class="badge pass-bg log float-right">Pass</span>
+            </p>
+          </div>
+          <div class="test-contents d-none">
+<div class="detail-head">
+<div class="p-v-10">
+<div class="info">
+<h5 class="test-status text-pass">Signup with new email id and verify the success and error response</h5>
+<span class='badge badge-success'>05.08.2025 7:41:57 am</span>
+<span class='badge badge-danger'>05.08.2025 7:41:59 am</span>
+<span class='badge badge-default'>00:00:02:976</span>
+&middot; <span class='uri-anchor badge badge-default'>#test-id=14</span>
+<span class='badge badge-default pointer float-right ml-1 et'><i class="fa fa-chevron-down"></i></span>
+<span class='badge badge-default pointer float-right ct'><i class="fa fa-chevron-up"></i></span>
+</div>
+</div>
+</div><div class="detail-body mt-4">
+<table class="table table-sm">
+  <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
+  <tbody>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>7:41:57 am</td>
+        <td>
+          Starting Scenario: Signup with new email id and verify the success and error response
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>7:41:57 am</td>
+        <td>
+          Signup user prepared: user_b827a9a2
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>7:41:59 am</td>
+        <td>
+          Executed signup API for user: user_b827a9a2
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>7:41:59 am</td>
+        <td>
+          Signup succeeded. Message: User created successfully
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>7:41:59 am</td>
+        <td>
+          Signup with duplicate email: user_b827a9a2
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>7:41:59 am</td>
+        <td>
+          Expected failure received. Message: Email already registered
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>7:41:59 am</td>
+        <td>
+          Signup with missing email
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>7:41:59 am</td>
+        <td>
+          Expected failure received. Message: Email already registered
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>7:41:59 am</td>
+        <td>
+          Scenario passed: Signup with new email id and verify the success and error response
+        </td>
+      </tr>
+  </tbody>
+</table>
+</div>
+          </div>
+        </li>
+        <li class="test-item"  status="pass" test-id="15"
+          author=""
+          tag=""
+          device="">
+          <div class="test-detail">
+            <p class="name">Signup validation with duplicate email and same ID</p>
+            <p class="text-sm">
+              <span>7:42:00 am</span> / <span>00:00:05:385</span>
+              <span class="badge pass-bg log float-right">Pass</span>
+            </p>
+          </div>
+          <div class="test-contents d-none">
+<div class="detail-head">
+<div class="p-v-10">
+<div class="info">
+<h5 class="test-status text-pass">Signup validation with duplicate email and same ID</h5>
+<span class='badge badge-success'>05.08.2025 7:42:00 am</span>
+<span class='badge badge-danger'>05.08.2025 7:42:05 am</span>
+<span class='badge badge-default'>00:00:05:385</span>
+&middot; <span class='uri-anchor badge badge-default'>#test-id=15</span>
+<span class='badge badge-default pointer float-right ml-1 et'><i class="fa fa-chevron-down"></i></span>
+<span class='badge badge-default pointer float-right ct'><i class="fa fa-chevron-up"></i></span>
+</div>
+</div>
+</div><div class="detail-body mt-4">
+<table class="table table-sm">
+  <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
+  <tbody>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>7:42:00 am</td>
+        <td>
+          Starting Scenario: Signup validation with duplicate email and same ID
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>7:42:02 am</td>
+        <td>
+          Signup done for user: vakq_user_5ee7c67a
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>7:42:02 am</td>
+        <td>
+          Signup succeeded. Message: User created successfully
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>7:42:02 am</td>
+        <td>
+          Signup with same email tried: vakq_user_5ee7c67a
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>7:42:02 am</td>
+        <td>
+          Expected failure received. Message: Email already registered
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>7:42:05 am</td>
+        <td>
+          Signup with same ID tried: ID=20180, Email=user_fe43d094
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>7:42:05 am</td>
+        <td>
+          Expected error in raw response: Internal Server Error
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>7:42:05 am</td>
+        <td>
+          Scenario passed: Signup validation with duplicate email and same ID
+        </td>
+      </tr>
+  </tbody>
+</table>
+</div>
+          </div>
+        </li>
+        <li class="test-item"  status="pass" test-id="16"
+          author=""
+          tag=""
+          device="">
+          <div class="test-detail">
+            <p class="name">Signup using multiple dynamic email prefixes and passwords</p>
+            <p class="text-sm">
+              <span>7:42:06 am</span> / <span>00:00:03:545</span>
+              <span class="badge pass-bg log float-right">Pass</span>
+            </p>
+          </div>
+          <div class="test-contents d-none">
+<div class="detail-head">
+<div class="p-v-10">
+<div class="info">
+<h5 class="test-status text-pass">Signup using multiple dynamic email prefixes and passwords</h5>
+<span class='badge badge-success'>05.08.2025 7:42:06 am</span>
+<span class='badge badge-danger'>05.08.2025 7:42:09 am</span>
+<span class='badge badge-default'>00:00:03:545</span>
+&middot; <span class='uri-anchor badge badge-default'>#test-id=16</span>
+<span class='badge badge-default pointer float-right ml-1 et'><i class="fa fa-chevron-down"></i></span>
+<span class='badge badge-default pointer float-right ct'><i class="fa fa-chevron-up"></i></span>
+</div>
+</div>
+</div><div class="detail-body mt-4">
+<table class="table table-sm">
+  <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
+  <tbody>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>7:42:06 am</td>
+        <td>
+          Starting Scenario: Signup using multiple dynamic email prefixes and passwords
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>7:42:09 am</td>
+        <td>
+          Signup done for user: vakq1_user_cce8462f
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>7:42:09 am</td>
+        <td>
+          Signup succeeded. Message: User created successfully
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>7:42:09 am</td>
+        <td>
+          Scenario passed: Signup using multiple dynamic email prefixes and passwords
+        </td>
+      </tr>
+  </tbody>
+</table>
+</div>
+          </div>
+        </li>
+        <li class="test-item"  status="pass" test-id="17"
+          author=""
+          tag=""
+          device="">
+          <div class="test-detail">
+            <p class="name">Signup using multiple dynamic email prefixes and passwords</p>
+            <p class="text-sm">
+              <span>7:42:09 am</span> / <span>00:00:02:809</span>
+              <span class="badge pass-bg log float-right">Pass</span>
+            </p>
+          </div>
+          <div class="test-contents d-none">
+<div class="detail-head">
+<div class="p-v-10">
+<div class="info">
+<h5 class="test-status text-pass">Signup using multiple dynamic email prefixes and passwords</h5>
+<span class='badge badge-success'>05.08.2025 7:42:09 am</span>
+<span class='badge badge-danger'>05.08.2025 7:42:12 am</span>
+<span class='badge badge-default'>00:00:02:809</span>
+&middot; <span class='uri-anchor badge badge-default'>#test-id=17</span>
+<span class='badge badge-default pointer float-right ml-1 et'><i class="fa fa-chevron-down"></i></span>
+<span class='badge badge-default pointer float-right ct'><i class="fa fa-chevron-up"></i></span>
+</div>
+</div>
+</div><div class="detail-body mt-4">
+<table class="table table-sm">
+  <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
+  <tbody>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>7:42:09 am</td>
+        <td>
+          Starting Scenario: Signup using multiple dynamic email prefixes and passwords
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>7:42:12 am</td>
+        <td>
+          Signup done for user: userapi_user_1e3186cb
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>7:42:12 am</td>
+        <td>
+          Signup succeeded. Message: User created successfully
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>7:42:12 am</td>
+        <td>
+          Scenario passed: Signup using multiple dynamic email prefixes and passwords
+        </td>
+      </tr>
+  </tbody>
+</table>
+</div>
+          </div>
+        </li>
+        <li class="test-item"  status="pass" test-id="18"
+          author=""
+          tag=""
+          device="">
+          <div class="test-detail">
+            <p class="name">Signup using multiple dynamic email prefixes and passwords</p>
+            <p class="text-sm">
+              <span>7:42:12 am</span> / <span>00:00:02:603</span>
+              <span class="badge pass-bg log float-right">Pass</span>
+            </p>
+          </div>
+          <div class="test-contents d-none">
+<div class="detail-head">
+<div class="p-v-10">
+<div class="info">
+<h5 class="test-status text-pass">Signup using multiple dynamic email prefixes and passwords</h5>
+<span class='badge badge-success'>05.08.2025 7:42:12 am</span>
+<span class='badge badge-danger'>05.08.2025 7:42:15 am</span>
+<span class='badge badge-default'>00:00:02:603</span>
+&middot; <span class='uri-anchor badge badge-default'>#test-id=18</span>
+<span class='badge badge-default pointer float-right ml-1 et'><i class="fa fa-chevron-down"></i></span>
+<span class='badge badge-default pointer float-right ct'><i class="fa fa-chevron-up"></i></span>
+</div>
+</div>
+</div><div class="detail-body mt-4">
+<table class="table table-sm">
+  <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
+  <tbody>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>7:42:12 am</td>
+        <td>
+          Starting Scenario: Signup using multiple dynamic email prefixes and passwords
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>7:42:15 am</td>
+        <td>
+          Signup done for user: qaauto_user_97e5bbb4
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>7:42:15 am</td>
+        <td>
+          Signup succeeded. Message: User created successfully
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>7:42:15 am</td>
+        <td>
+          Scenario passed: Signup using multiple dynamic email prefixes and passwords
+        </td>
+      </tr>
+  </tbody>
+</table>
+</div>
+          </div>
+        </li>
+      </ul>
+    </div>
+  </div>
+<div class="test-content scrollable">
+<div class="test-content-tools">
+<ul><li><a class="back-to-test" href="#"><i class="fa fa-arrow-left"></i></a></li></ul>
+</div>
+<div class="test-content-detail"><div class="detail-body"></div></div>
+</div></div>
+<div class="container-fluid p-4 view dashboard-view">
+<div class="row">
+<div class="col-md-3">
+<div class="card"><div class="card-body">
+<p class="m-b-0">Started</p>
+<h3>May 8, 2025 07:40:22 am</h3>
+</div></div>
+</div>
+<div class="col-md-3">
+<div class="card"><div class="card-body">
+<p class="m-b-0">Ended</p>
+<h3>May 8, 2025 07:42:15 am</h3>
+</div></div>
+</div>
+<div class="col-md-3">
+<div class="card"><div class="card-body">
+<p class="m-b-0 text-pass">Tests Passed</p>
+<h3>18</h3>
+</div></div>
+</div>
+<div class="col-md-3">
+<div class="card"><div class="card-body">
+<p class="m-b-0 text-fail">Tests Failed</p>
+<h3>0</h3>
+</div></div>
+</div>
+</div>
+<div class="row">
+<div class="col-md-6">
+<div class="card">
+<div class="card-header">
+<h6 class="card-title">Tests</h6>
+</div>
+<div class="card-body">
+<div class="">
+<canvas id='parent-analysis' width='115' height='90'></canvas>
+</div>
+</div>
+<div class="card-footer">
+<div><small data-tooltip='100%'>
+<b>18</b> tests passed
+</small>
+</div>
+<div>
+<small data-tooltip='0%'><b>0</b> tests failed,
+<b>0</b> skipped, <b data-tooltip='0%'>0</b> others
+</small>
+</div>
+</div>
+</div>
+</div>
+<div class="col-md-6">
+<div class="card">
+<div class="card-header">
+<h6 class="card-title">Log events</h6>
+</div>
+<div class="card-body">
+<div class="">
+<canvas id='events-analysis' width='115' height='90'></canvas>
+</div>
+</div>
+<div class="card-footer">
+<div><small data-tooltip='53%'><b>52</b> events passed</small></div>
+<div>
+<small data-tooltip='0%'><b>0</b> events failed,
+<b data-tooltip='%'>46</b> others
+</small>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="row"><div class="col-md-12">
+<div class="card"><div class="card-header"><p>Timeline</p></div>
+<div class="card-body pt-0"><div>
+<canvas id="timeline" height="120"></canvas>
+</div></div>
+</div>
+</div></div>
+<script>
+var timeline = {
+"FastAPI Server Setup":14.755,"Create a book with valid details":14.717,"Create a book with valid details":6.287,"Attempt to create a book with missing name":5.262,"Fetch all books and validate list":5.159,"Fetch book by valid ID":6.121,"Fetch book using invalid ID":5.57,"Login attempt before signup should return error":0.363,"Login attempt with missing parameters should return error":2.842,"Sign up as a new user and login with the same credentials":5.966,"Signup and Login with multiple dynamic users":5.602,"Signup and Login with multiple dynamic users":5.414,"Signup and Login with multiple dynamic users":5.461,"Signup with new email id and verify the success and error response":2.976,"Signup validation with duplicate email and same ID":5.385,"Signup using multiple dynamic email prefixes and passwords":3.545,"Signup using multiple dynamic email prefixes and passwords":2.809,"Signup using multiple dynamic email prefixes and passwords":2.603
+};
+</script>
+<div class="row">
+</div>
+</div>
+<script>
+var statusGroup = {
+parentCount: 5,
+passParent: 18,
+failParent: 0,
+warningParent: 0,
+skipParent: 0,
+childCount: 5,
+passChild: 0,
+failChild: 0,
+warningChild: 0,
+skipChild: 0,
+infoChild: 0,
+grandChildCount: 5,
+passGrandChild: 0,
+failGrandChild: 0,
+warningGrandChild: 0,
+skipGrandChild: 0,
+infoGrandChild: 0,
+eventsCount: 5,
+passEvents: 52,
+failEvents: 0,
+warningEvents: 0,
+skipEvents: 0,
+infoEvents: 46
+};
+</script>        </div>
+      </div>
+    </div>
+  </div>
+<script src="https://cdn.jsdelivr.net/gh/extent-framework/extent-github-cdn@d6562a79075e061305ccfdb82f01e5e195e2d307/spark/js/spark-script.js"></script>
+<script type="text/javascript"></script></body>
+</html>
