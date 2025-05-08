@@ -21,8 +21,7 @@ jobs:
 
       - name: Install Python dependencies
         run: |
-          cd bookstore-main
-          pip install -r requirements.txt
+          pip install -r bookstore-main/bookstore/requirements.txt
 
       - name: Start FastAPI server in background
         run: |
