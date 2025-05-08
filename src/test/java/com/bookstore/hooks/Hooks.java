@@ -9,9 +9,6 @@ public class Hooks {
 
 	 @Before
 	    public void beforeScenario(Scenario scenario) {
-	        // baseURI and health check...
-	        
-	        // Remove initReport here - already initialized globally
 	        ExtentReportUtil.createTest(scenario.getName());
 	        ExtentReportUtil.step("INFO", "Starting Scenario: " + scenario.getName());
 	    }

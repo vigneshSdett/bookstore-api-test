@@ -3,6 +3,7 @@ package com.bookStore.config;
 import java.io.FileInputStream;
 import java.io.IOException;
 import java.util.Properties;
+import java.io.File;
 
 public class ConfigReader {
 
@@ -10,7 +11,10 @@ public class ConfigReader {
 
     static {
         try {
-            FileInputStream input = new FileInputStream("src/test/resources/config.properties");
+            String configPath = System.getProperty("user.dir") + File.separator + "src" +
+                                File.separator + "test" + File.separator + "resources" +
+                                File.separator + "config.properties";
+            FileInputStream input = new FileInputStream(configPath);
             properties.load(input);
         } catch (IOException e) {
             throw new RuntimeException("Failed to load config.properties file.", e);
@@ -18,14 +22,26 @@ public class ConfigReader {
     }
 
     public static String getBaseUri() {
-        return properties.getProperty("base.uri", "http://127.0.0.1:8000");
+        String value = properties.getProperty("base.uri");
+        if (value == null || value.isEmpty()) {
+            throw new RuntimeException("Missing required config: base.uri");
+        }
+        return value;
     }
 
     public static String getContentType() {
-        return properties.getProperty("content.type", "application/json");
+        String value = properties.getProperty("content.type");
+        if (value == null || value.isEmpty()) {
+            throw new RuntimeException("Missing required config: content.type");
+        }
+        return value;
     }
 
     public static String getProperty(String key) {
-        return properties.getProperty(key);
+        String value = properties.getProperty(key);
+        if (value == null || value.isEmpty()) {
+            throw new RuntimeException("Missing required config: " + key);
+        }
+        return value;
     }
 }

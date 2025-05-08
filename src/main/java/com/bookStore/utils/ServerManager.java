@@ -4,6 +4,9 @@ import java.io.BufferedReader;
 import java.io.File;
 import java.io.IOException;
 import java.io.InputStreamReader;
+
+import com.bookStore.config.ConfigReader;
+
 import io.restassured.RestAssured;
 
 public class ServerManager {
@@ -14,8 +17,10 @@ public class ServerManager {
         	
         	ExtentReportUtil.step("INFO", "----------Server startup---------");
             ProcessBuilder pb = new ProcessBuilder("cmd.exe", "/c", "uvicorn main:app --reload");
-            pb.directory(new File("C:\\Users\\mahes\\OneDrive\\Documents\\BookStoreE2E\\bookstore-tests\\bookstore-main\\bookstore"));
-            pb.redirectErrorStream(true);
+            String projectRoot = System.getProperty("user.dir"); // Points to bookstore-tests
+            File backendDir = new File(projectRoot + File.separator + "bookstore-main" + File.separator + "bookstore");
+            pb.directory(backendDir);
+
 
             serverProcess = pb.start(); // Save process for later shutdown
 
@@ -58,7 +63,7 @@ public class ServerManager {
 
     public static boolean isServerRunning() {
         try {
-            io.restassured.RestAssured.baseURI = "http://127.0.0.1:8000";
+            RestAssured.baseURI = ConfigReader.getBaseUri();
             io.restassured.response.Response response = RestAssured
                 .given()
                 .header("Content-Type", "application/json")
