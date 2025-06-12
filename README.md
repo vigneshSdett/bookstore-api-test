@@ -14,6 +14,7 @@ This repository contains an end-to-end API automation framework built for a Fast
 | Build Tool      | Maven              |
 | CI/CD           | GitHub Actions     |
 
+
 ## Project Structure
 
 ```
