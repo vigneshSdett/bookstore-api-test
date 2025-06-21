@@ -139,6 +139,6 @@ jobs:
 
 ## Author
 
-**Vignesh Arun Kumar**  
+**Vignesh**  
 Senior Test Engineer  
 Expertise: Java, API Testing, RestAssured, Cucumber, Selenium
